@@ -34,9 +34,9 @@ No database modifications are needed.
      property :body,    Text
      
      is :markup, :body => :textile
-     
+    end
    
-   >> story = Article.find(3)
+   >> story = Article.get(3)
    => #<Article:0x245fed8 ... >
    
    >> story.body
